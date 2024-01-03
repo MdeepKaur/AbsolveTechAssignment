@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212325">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/rounded_top_corners"
+        android:foregroundGravity="bottom"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bonus In 2021"
+            android:textColor="@color/_959595"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewOne"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/ededef"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeading" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgID"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_recent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewOne" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="#JFHJD44556D"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imgID"
+            app:layout_constraintTop_toTopOf="@id/imgID" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStatusHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/_959595"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHeading2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03 Jan"
+            android:textColor="@color/_959595"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvHeading2"
+            app:layout_constraintTop_toBottomOf="@id/tvHeading2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Progress"
+            android:textColor="#f0ce62"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeading2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmountHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Amount"
+            android:textColor="@color/_959595"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvHeading2"
+            app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$2.00"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvHeading2"
+            app:layout_constraintTop_toBottomOf="@id/tvAmountHeading" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAccountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Account Info"
+            android:textColor="@color/_959595"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvHeading2"
+            app:layout_constraintTop_toBottomOf="@id/tvAmount" />
+
+        <View
+            android:id="@+id/viewTwo"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/ededef"
+            app:layout_constraintBottom_toBottomOf="@id/tvAccountInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvAccountInfo"
+            app:layout_constraintTop_toTopOf="@id/tvAccountInfo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDummy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Lorem Ipsum"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvAccountInfo"
+            app:layout_constraintTop_toBottomOf="@id/viewTwo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDeductions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Deductions"
+            android:textColor="@color/_959595"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvHeading2"
+            app:layout_constraintTop_toBottomOf="@id/tvDummy" />
+
+        <View
+            android:id="@+id/viewThree"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/ededef"
+            app:layout_constraintBottom_toBottomOf="@id/tvDeductions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvDeductions"
+            app:layout_constraintTop_toTopOf="@id/tvDeductions" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tvDeductions"
+            app:layout_constraintTop_toBottomOf="@id/tvDeductions">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:textColor="@color/_959595"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvServiceVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2.00"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvService" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/viewFour"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/ededef"
+            app:layout_constraintBottom_toBottomOf="@id/clService"
+            app:layout_constraintEnd_toEndOf="@id/clService"
+            app:layout_constraintStart_toStartOf="@id/clTds"
+            app:layout_constraintTop_toTopOf="@id/clService" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toStartOf="@id/viewFive"
+            app:layout_constraintStart_toEndOf="@+id/viewFour"
+            app:layout_constraintTop_toBottomOf="@id/tvDeductions">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TDS"
+                android:textColor="@color/_959595"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/tvTdsVal"
+                app:layout_constraintStart_toStartOf="@id/tvTdsVal"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTdsVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2.00"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTds" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/viewFive"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/ededef"
+            app:layout_constraintBottom_toBottomOf="@id/clTds"
+            app:layout_constraintEnd_toStartOf="@id/clFee"
+            app:layout_constraintStart_toEndOf="@id/clTds"
+            app:layout_constraintTop_toTopOf="@id/clTds" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/viewFive"
+            app:layout_constraintTop_toBottomOf="@id/tvDeductions">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMPS FEE"
+                android:textColor="@color/_959595"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFeeVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2.00"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvFee" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/viewSix"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/ededef"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clService" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgID2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_recent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewSix" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeading22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="#JFHJD44556D"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imgID2"
+            app:layout_constraintTop_toTopOf="@id/imgID2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStatusHeading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/_959595"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHeading22"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03 Jan"
+            android:textColor="@color/_959595"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvHeading22"
+            app:layout_constraintTop_toBottomOf="@id/tvHeading22" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Progress"
+            android:textColor="#3cbb3b"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeading22" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmountHeading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Amount"
+            android:textColor="@color/_959595"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvHeading22"
+            app:layout_constraintTop_toBottomOf="@id/tvDate2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$2.00"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvHeading22"
+            app:layout_constraintTop_toBottomOf="@id/tvAmountHeading2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
